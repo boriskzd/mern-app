@@ -2,6 +2,8 @@
 const User = require("../models/user-model");
 const { json } = require("body-parser");
 
+// create CRUD operations for app
+
 // create user
 createUser = (req, res) => {
   const body = req.body;

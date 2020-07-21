@@ -5,9 +5,9 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 // import mongoose db / mongo db framework
 const db = require("./db");
-//
+// add user router for CRUD operations
 const userRouter = require("./routes/user-router");
-
+// user express as app
 const app = express();
 const apiPort = 3000;
 
