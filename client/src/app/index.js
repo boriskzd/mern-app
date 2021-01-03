@@ -5,7 +5,7 @@ import { NavBar } from "../components";
 // pages that will be displayed on different URLs
 // example: by visiting "/users/list" router will display UsersList page
 // UsersList page has to use Link from react-router-dom for this to work
-import { UsersList, UsersInsert } from "../pages";
+import { UsersListPage, UsersInsert } from "../pages";
 
 import styled from "styled-components";
 
@@ -21,7 +21,7 @@ function App() {
       <NavBar />
       <Container>
         <Switch>
-          <Route path="/users/list" exact component={UsersList} />
+          <Route path="/users/list" exact component={UsersListPage} />
           <Route path="/users/create" exact component={UsersInsert} />
         </Switch>
       </Container>

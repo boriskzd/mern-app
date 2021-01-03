@@ -1,4 +1,4 @@
 import UsersInsert from "./UsersInsert";
-import UsersList from "./UsersList";
+import UsersListPage from "./UsersListPage";
 
-export { UsersInsert, UsersList };
+export { UsersInsert, UsersListPage };

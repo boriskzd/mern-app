@@ -2,8 +2,12 @@ import React, { Component } from "react";
 import ReactTable from "react-table";
 import api from "../api";
 
-import styled from "styled-components";
+// redux
+import { connect } from "react-redux";
+// redux end
 
+import styled from "styled-components";
+// React Table CSS file
 import "react-table/react-table.css";
 
 // few components created with "styled-components"
@@ -64,7 +68,7 @@ class UsersList extends Component {
     // when we get response with list of users, we display them in table
     //
     const { users, isLoading } = this.state;
-    console.log("TCL: UsersList -> render -> users", users.length, users);
+    // console.log("TCL: UsersList -> render -> users", users.length, users);
 
     // React Table columns
     const columns = [
@@ -127,3 +131,4 @@ class UsersList extends Component {
 }
 
 export default UsersList;
+// export default connect(mapStateToProps)(UsersList);
